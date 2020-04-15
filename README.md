@@ -1,4 +1,4 @@
-####已读列表：
+#### 已读列表：
 ##### 1. [NMS by Representative Region : Towards Crowded Pedestrian Detection by Proposal Pairing](https://arxiv.org/pdf/2003.12729.pdf)
 - 使用pedestian的可见区域（visible region）q去做NMS，加了一个检测可见区域的分支，需要训练
 ##### 2. [Double Anchor R-CNN for Human Detection in a Crowd](https://arxiv.org/pdf/1909.09998.pdf)
@@ -17,7 +17,8 @@ Occlusion Estimation](http://openaccess.thecvf.com/content_ECCV_2018/papers/CHUN
   好评，很solid工作，传统CV艺能与CNN结合的好想法。目测当时这参也不好调吧。这个投票机制既然能选实例中心，也可以用来选其它feature，这是一个借鉴的路径。
 ##### 6.[Mask-Guided Attention Network for Occluded Pedestrian Detection](http://openaccess.thecvf.com/content_ICCV_2019/papers/Pang_Mask-Guided_Attention_Network_for_Occluded_Pedestrian_Detection_ICCV_2019_paper.pdf)
 - 想法比较简单，将整个visible region与其它部分二值化，作为监督去训练一个可见区域的分割，然后拿得到的分割概率图，作为attention，在分类前直接点乘了原来的feature map，去抑制非人形物体的特征，降低FPR。
-####未读列表
+
+#### 未读列表
 ##### 7.[DR Loss: Improving Object Detection by Distributional Ranking](https://arxiv.org/pdf/1907.10156.pdf)
 ##### 8.[Bounding Box Regression with Uncertainty for Accurate Object Detection](http://openaccess.thecvf.com/content_CVPR_2019/papers/He_Bounding_Box_Regression_With_Uncertainty_for_Accurate_Object_Detection_CVPR_2019_paper.pdf)
 ##### 9.[Learning Deep Features for Discriminative Localization](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf)
