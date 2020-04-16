@@ -1,4 +1,4 @@
-#### 已读列表：
+### 已读列表：
 ##### 1. [NMS by Representative Region : Towards Crowded Pedestrian Detection by Proposal Pairing](https://arxiv.org/pdf/2003.12729.pdf)
 - 使用pedestian的可见区域（visible region）q去做NMS，加了一个检测可见区域的分支，需要训练
 ##### 2. [Double Anchor R-CNN for Human Detection in a Crowd](https://arxiv.org/pdf/1909.09998.pdf)
@@ -22,7 +22,7 @@ Occlusion Estimation](http://openaccess.thecvf.com/content_ECCV_2018/papers/CHUN
 ##### 8.[Learning Deep Features for Discriminative Localization](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf)
 - 四年前的老paper了，跟resnet是一届的，没什么太多可以借鉴的地方，看起来像attention的的图也只不过是特征图upsamling了一下，在原图上做了visualization
 
-#### 未读列表
+### 未读列表
 ##### 9.[Bridging the Gap Between Anchor-based and Anchor-free Detection viaAdaptive Training Sample Selection](https://arxiv.org/pdf/1912.02424.pdf)
 ##### 10.[Self-supervised Equivariant Attention Mechanismfor Weakly Supervised Semantic Segmentation](https://arxiv.org/pdf/2004.04581.pdf)
 ##### 11.[Distance-IoU Loss: Faster and Better Learning for Bounding Box Regression](https://arxiv.org/pdf/1911.08287.pdf)
