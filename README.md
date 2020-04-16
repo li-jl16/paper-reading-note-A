@@ -19,10 +19,11 @@ Occlusion Estimation](http://openaccess.thecvf.com/content_ECCV_2018/papers/CHUN
 - 想法比较简单，将整个visible region与其它部分二值化，作为监督去训练一个可见区域的分割，然后拿得到的分割概率图，作为attention，在分类前直接点乘了原来的feature map，去抑制非人形物体的特征，降低FPR。
 ##### 7.[Bounding Box Regression with Uncertainty for Accurate Object Detection](http://openaccess.thecvf.com/content_CVPR_2019/papers/He_Bounding_Box_Regression_With_Uncertainty_for_Accurate_Object_Detection_CVPR_2019_paper.pdf)
 - 文章的related work部分提到了很多做NMS和BBOX修正的文章，是个不错的review列表。这篇文章的理论上的fomulation很好看，其实是把预测看成了一个概率事件，比如你预测的bbox的左上角的x坐标值是150，那请问你能不能告诉我，你估计你预测的这个150就是GT值的概率是多少？它旁边的149是GT的概率是多少，151是GT的概率是多少？这就需要你给出一个概率分布来。那怎么得到预测的概率分布呢？作者是这样做的：假设预测的四个位置参数是独立分布的高斯函数，把groudtruth作为狄拉克分布（常用办法），用KL距离去训练，minimize这两个分布，获得一个对variance的预测。这样每次前向过程不仅能输出预测的location，也能输出这个location的概率。然后再定义一个置信函数，利用预测的概率（实际只用variance即可）结合周围的bbox远近，用所有周围bbox的一个加权，去修正某一个bbox。这个过程放在了NMS里。这个想法不错，先记着，看看能不能在去掉NMS之后还能用到类似的想法。
+##### 8.[Learning Deep Features for Discriminative Localization](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf)
+- 四年前的老paper了，跟resnet是一届的，没什么太多可以借鉴的地方，看起来像attention的的图也只不过是特征图upsamling了一下，在原图上做了visualization
 
 #### 未读列表
-##### 8.[DR Loss: Improving Object Detection by Distributional Ranking](https://arxiv.org/pdf/1907.10156.pdf)
-##### 9.[Learning Deep Features for Discriminative Localization](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf)
+##### 9.[DR Loss: Improving Object Detection by Distributional Ranking](https://arxiv.org/pdf/1907.10156.pdf)
 ##### 10.[Bridging the Gap Between Anchor-based and Anchor-free Detection viaAdaptive Training Sample Selection](https://arxiv.org/pdf/1912.02424.pdf)
 ##### 11.[Self-supervised Equivariant Attention Mechanismfor Weakly Supervised Semantic Segmentation](https://arxiv.org/pdf/2004.04581.pdf)
 ##### 12.[Distance-IoU Loss: Faster and Better Learning for Bounding Box Regression](https://arxiv.org/pdf/1911.08287.pdf)
