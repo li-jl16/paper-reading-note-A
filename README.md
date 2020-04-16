@@ -23,7 +23,9 @@ Occlusion Estimation](http://openaccess.thecvf.com/content_ECCV_2018/papers/CHUN
 - 四年前的老paper了，跟resnet是一届的，没什么太多可以借鉴的地方，看起来像attention的的图也只不过是特征图upsamling了一下，在原图上做了visualization
 
 #### 未读列表
-##### 9.[DR Loss: Improving Object Detection by Distributional Ranking](https://arxiv.org/pdf/1907.10156.pdf)
-##### 10.[Bridging the Gap Between Anchor-based and Anchor-free Detection viaAdaptive Training Sample Selection](https://arxiv.org/pdf/1912.02424.pdf)
-##### 11.[Self-supervised Equivariant Attention Mechanismfor Weakly Supervised Semantic Segmentation](https://arxiv.org/pdf/2004.04581.pdf)
-##### 12.[Distance-IoU Loss: Faster and Better Learning for Bounding Box Regression](https://arxiv.org/pdf/1911.08287.pdf)
+##### 9.[Bridging the Gap Between Anchor-based and Anchor-free Detection viaAdaptive Training Sample Selection](https://arxiv.org/pdf/1912.02424.pdf)
+##### 10.[Self-supervised Equivariant Attention Mechanismfor Weakly Supervised Semantic Segmentation](https://arxiv.org/pdf/2004.04581.pdf)
+##### 11.[Distance-IoU Loss: Faster and Better Learning for Bounding Box Regression](https://arxiv.org/pdf/1911.08287.pdf)
+##### 12.[DR Loss: Improving Object Detection by Distributional Ranking](https://arxiv.org/pdf/1907.10156.pdf)
+
+
