@@ -32,5 +32,5 @@ Occlusion Estimation](http://openaccess.thecvf.com/content_ECCV_2018/papers/CHUN
 ##### 01.[SOLOv2: Dynamic, Faster and Stronger](https://arxiv.org/pdf/2003.10152.pdf)
 ##### 02.[Bridging the Gap Between Anchor-based and Anchor-free Detection viaAdaptive Training Sample Selection](https://arxiv.org/pdf/1912.02424.pdf)
 ##### 03.[Foveabox: Beyond anchor-based object detector](https://arxiv.org/pdf/1904.03797.pdf)
-
+##### 04.[An intriguing failing of convolutional neural networks and the coordconv solution](http://papers.nips.cc/paper/8169-an-intriguing-failing-of-convolutional-neural-networks-and-the-coordconv-solution.pdf)
 
