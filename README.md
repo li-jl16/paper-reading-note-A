@@ -25,7 +25,7 @@ Occlusion Estimation](http://openaccess.thecvf.com/content_ECCV_2018/papers/CHUN
 - 这篇文章真的让我有一种万剑归宗的感觉。特征是什么呢？一个东西走起来像鸭子，叫起来像鸭子，那它就是一只鸭子。特征，就是观察者认为是同一类的事物所应该共同拥有的东西。那么，假设现在有一堆varible，x1,x2,x3,...,xn,他们的共同的feature从信息论的角度讲，是他们的mutual information。independent viriable之间的mutual information是0，只要这个值不是0，那么这两个变量之间必然有概率上的联系。我们要找的就是这个信息。假设你现在有了一个特征提取函数f(x),最佳的特征就是使得f(x1),f(x2),....f(x3)这些变量之间都有最大的互信息。而deep learning，就是学习这个f(x)的过程。kaiming这篇non local nerual networks干的就是这件事情，只不过用神经网络实现了它。这里每个variable就是固定时空域的一个样本数据，比如某一帧画面上的一个像素，non local的操作$y_i=(1/C(x))*(sum_j(f(xi,xj))*xi)$其实就是在提取这样的互信息。
 ##### 10.[Self-supervised Equivariant Attention Mechanismfor Weakly Supervised Semantic Segmentation](https://arxiv.org/pdf/2004.04581.pdf)
 - 重点有两个，一个是增加了一个对于分割问题affinity不变性的监督，另一个是对CAM加了让correlation最大化的self-attention机制(对【9】的一个针对弱监督场景的改造)
-##### 11[SOLO: Segmenting Objects by Locations](https://arxiv.org/pdf/1912.04488.pdf)
+##### 11.[SOLO: Segmenting Objects by Locations](https://arxiv.org/pdf/1912.04488.pdf)
 - 这篇文章的主要思想其实就是，既然做完语义分割后再分割实例不容易，又或者先做目标检测再在bbox里预测mask这样两阶段的不优雅，那我直接预测的时候就把每个实例分开好了！预测几千个channel的map，每个map里只预测一个实例的mask，至于这个mask的类别是什么，我用再做另一个branch去做对应的预测即可。最后我可能从这几千个channel里面得到了几百个mask，再用NMS去做一下过滤就得到了结果。具体的做法是，图像划分为S*S个小方格，我每个channel只负责预测图像上一个特定小方格所代表的位置，如果这个位置正好位于某个物体的中心，那这个channel对应的groudtruth就是这个物体的mask，否则为空。相应的预测类别的分支也划分成s*s个小格子，预测每个格子的类别。作者加了一个CoordConv的数据，去帮助加强位置信息，这个其实作用不大，ablation里面看到这个对AP只有不大的提升，主要还是靠划分通道针对对应位置训练的时候，就已经把位置信息固定下来了；W*H*S*S这个输出太大了，训练一定很慢，为此作者提出了一种decouple的方式，用2S图乘出s*s的图来，可以降低输出大小，很像矩阵的SVD只保留最大的特征向量。但我猜这个只能对付图里物体不多的情况，如果遇上比如行人检测这种密集检测任务，2S的表达力可能就不足以支持组合出这么多mask了。最后，感觉还可以思考，其实核心思想既然是一个channel的输出只解决一个instance，那这个也不一定非要通过位置来决定每个 output channel输出哪个instance，可能存在其它方式？
 
 ### 未读列表:
