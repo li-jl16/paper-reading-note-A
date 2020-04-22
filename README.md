@@ -28,7 +28,6 @@ Occlusion Estimation](http://openaccess.thecvf.com/content_ECCV_2018/papers/CHUN
 
 ### 未读列表
 ##### 11.[Bridging the Gap Between Anchor-based and Anchor-free Detection viaAdaptive Training Sample Selection](https://arxiv.org/pdf/1912.02424.pdf)
-##### 12.[Distance-IoU Loss: Faster and Better Learning for Bounding Box Regression](https://arxiv.org/pdf/1911.08287.pdf)
-##### 13.[DR Loss: Improving Object Detection by Distributional Ranking](https://arxiv.org/pdf/1907.10156.pdf)
+##### 12.[Foveabox: Beyond anchor-based object detector](https://arxiv.org/pdf/1904.03797.pdf)
 
 
