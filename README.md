@@ -25,9 +25,12 @@ Occlusion Estimation](http://openaccess.thecvf.com/content_ECCV_2018/papers/CHUN
 - 这篇文章真的让我有一种万剑归宗的感觉。特征是什么呢？一个东西走起来像鸭子，叫起来像鸭子，那它就是一只鸭子。特征，就是观察者认为是同一类的事物所应该共同拥有的东西。那么，假设现在有一堆varible，x1,x2,x3,...,xn,他们的共同的feature从信息论的角度讲，是他们的mutual information。independent viriable之间的mutual information是0，只要这个值不是0，那么这两个变量之间必然有概率上的联系。我们要找的就是这个信息。假设你现在有了一个特征提取函数f(x),最佳的特征就是使得f(x1),f(x2),....f(x3)这些变量之间都有最大的互信息。而deep learning，就是学习这个f(x)的过程。kaiming这篇non local nerual networks干的就是这件事情，只不过用神经网络实现了它。这里每个variable就是固定时空域的一个样本数据，比如某一帧画面上的一个像素，non local的操作$y_i=(1/C(x))*(sum_j(f(xi,xj))*xi)$其实就是在提取这样的互信息。
 ##### 10.[Self-supervised Equivariant Attention Mechanismfor Weakly Supervised Semantic Segmentation](https://arxiv.org/pdf/2004.04581.pdf)
 - 重点有两个，一个是增加了一个对于分割问题affinity不变性的监督，另一个是对CAM加了让correlation最大化的self-attention机制(对【9】的一个针对弱监督场景的改造)
+##### 11[SOLO: Segmenting Objects by Locations](https://arxiv.org/pdf/1912.04488.pdf)
+- 
 
-### 未读列表
-##### 11.[Bridging the Gap Between Anchor-based and Anchor-free Detection viaAdaptive Training Sample Selection](https://arxiv.org/pdf/1912.02424.pdf)
-##### 12.[Foveabox: Beyond anchor-based object detector](https://arxiv.org/pdf/1904.03797.pdf)
+### 未读列表:
+##### 01.[SOLOv2: Dynamic, Faster and Stronger](https://arxiv.org/pdf/2003.10152.pdf)
+##### 02.[Bridging the Gap Between Anchor-based and Anchor-free Detection viaAdaptive Training Sample Selection](https://arxiv.org/pdf/1912.02424.pdf)
+##### 03.[Foveabox: Beyond anchor-based object detector](https://arxiv.org/pdf/1904.03797.pdf)
 
 
