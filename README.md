@@ -39,6 +39,6 @@ Occlusion Estimation](http://openaccess.thecvf.com/content_ECCV_2018/papers/CHUN
 ##### 05.[YOLACT Real-time Instance Segmentation](http://openaccess.thecvf.com/content_ICCV_2019/papers/Bolya_YOLACT_Real-Time_Instance_Segmentation_ICCV_2019_paper.pdf)
 ##### 06.[CenterNet: Keypoint Triplets for Object Detection](http://openaccess.thecvf.com/content_ICCV_2019/papers/Duan_CenterNet_Keypoint_Triplets_for_Object_Detection_ICCV_2019_paper.pdf)
 ##### 07.[DFANet: Deep Feature Aggregation for Real-Time Semantic Segmentation](http://openaccess.thecvf.com/content_CVPR_2019/papers/Li_DFANet_Deep_Feature_Aggregation_for_Real-Time_Semantic_Segmentation_CVPR_2019_paper.pdf)
-##### 08.[Scale-Aware Trident Networks for Object Detection](http://openaccess.thecvf.com/content_ICCV_2019/papers/Li_Scale-Aware_Trident_Networks_for_Object_Detection_ICCV_2019_paper.pdf)
+##### 08.[SNIPER:Efficient multi-scale training](http://papers.nips.cc/paper/8143-sniper-efficient-multi-scale-training.pdf)
 
 
