@@ -33,7 +33,8 @@ Occlusion Estimation](http://openaccess.thecvf.com/content_ECCV_2018/papers/CHUN
 
 
 ### 未读列表:
-##### 01.[TensorMask: A Foundation for Dense Object Segmentation](chrome-extension://ikhdkkncnoglghljlkmcimlnlhkeamad/pdf-viewer/web/viewer.html?file=https%3A%2F%2Farxiv.org%2Fpdf%2F1903.12174.pdf)
+##### 00.[YOLOv4: Optimal Speed and Accuracy of Object Detection](https://arxiv.org/abs/2004.10934)
+##### 01.[TensorMask: A Foundation for Dense Object Segmentation](https://arxiv.org/abs/1903.12174v2)
 ##### 02.[Bridging the Gap Between Anchor-based and Anchor-free Detection viaAdaptive Training Sample Selection](https://arxiv.org/pdf/1912.02424.pdf)
 ##### 03.[Foveabox: Beyond anchor-based object detector](https://arxiv.org/pdf/1904.03797.pdf)
 ##### 04.[An intriguing failing of convolutional neural networks and the coordconv solution](http://papers.nips.cc/paper/8169-an-intriguing-failing-of-convolutional-neural-networks-and-the-coordconv-solution.pdf)
@@ -42,4 +43,4 @@ Occlusion Estimation](http://openaccess.thecvf.com/content_ECCV_2018/papers/CHUN
 ##### 07.[DFANet: Deep Feature Aggregation for Real-Time Semantic Segmentation](http://openaccess.thecvf.com/content_CVPR_2019/papers/Li_DFANet_Deep_Feature_Aggregation_for_Real-Time_Semantic_Segmentation_CVPR_2019_paper.pdf)
 ##### 08.[SNIPER:Efficient multi-scale training](http://papers.nips.cc/paper/8143-sniper-efficient-multi-scale-training.pdf)
 ##### 09.[MatrixNets: A New Scale and Aspect Ratio Aware Architecture for Object Detection](https://arxiv.org/pdf/2001.03194.pdf)
-
+##### 10.[Bag of Freebies for Training Object Detection Neural Networks](https://arxiv.org/abs/1902.04103)
