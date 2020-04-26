@@ -40,5 +40,5 @@ Occlusion Estimation](http://openaccess.thecvf.com/content_ECCV_2018/papers/CHUN
 ##### 06.[CenterNet: Keypoint Triplets for Object Detection](http://openaccess.thecvf.com/content_ICCV_2019/papers/Duan_CenterNet_Keypoint_Triplets_for_Object_Detection_ICCV_2019_paper.pdf)
 ##### 07.[DFANet: Deep Feature Aggregation for Real-Time Semantic Segmentation](http://openaccess.thecvf.com/content_CVPR_2019/papers/Li_DFANet_Deep_Feature_Aggregation_for_Real-Time_Semantic_Segmentation_CVPR_2019_paper.pdf)
 ##### 08.[SNIPER:Efficient multi-scale training](http://papers.nips.cc/paper/8143-sniper-efficient-multi-scale-training.pdf)
-
+##### 09.[MatrixNets: A New Scale and Aspect Ratio Aware Architecture for Object Detection](https://arxiv.org/pdf/2001.03194.pdf)
 
