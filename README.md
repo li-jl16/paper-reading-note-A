@@ -9,7 +9,7 @@
 ##### 05.[EfficientDet: Scalable and Efficient Object Detection](https://arxiv.org/pdf/1911.09070.pdf)
 ##### 06.[EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/pdf/1905.11946.pdf)
 ##### 07.[Key Points Estimation and Point Instance Segmentation Approach for Lane Detection](https://arxiv.org/pdf/2002.06604v2.pdf)
-##### 08.[Multi-Class Lane Semantic Segmentation using Efficient Convolutional Networks](Multi-Class Lane Semantic Segmentation usingEfficient Convolutional Networks)
+##### 08.[Multi-Class Lane Semantic Segmentation using Efficient Convolutional Networks](https://arxiv.org/pdf/1907.09438.pdf)
 ##### 09.[A Dataset for Lane Instance Segmentation in Urban Environments](https://arxiv.org/pdf/1807.01347v2.pdf)
 ##### 10.[Robust Lane Marking Detection Algorithm Using Drivable Area Segmentation and Extended SLT](https://arxiv.org/pdf/1911.09054v1.pdf)
 ##### 11.[LaneNet: Real-Time Lane Detection Networks for Autonomous Driving](https://arxiv.org/pdf/1807.01726.pdf)
