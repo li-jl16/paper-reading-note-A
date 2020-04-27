@@ -54,3 +54,4 @@ Occlusion Estimation](http://openaccess.thecvf.com/content_ECCV_2018/papers/CHUN
 ##### 18.[PSANet: Point-wise Spatial Attention Network for Scene Parsing](https://hszhao.github.io/papers/eccv18_psanet.pdf)
 ##### 19.[CCNet: Criss-Cross Attention for Semantic Segmentation](http://openaccess.thecvf.com/content_ICCV_2019/papers/Huang_CCNet_Criss-Cross_Attention_for_Semantic_Segmentation_ICCV_2019_paper.pdf)
 ##### 20.[OCNet: Object Context Network for Scene Parsing](https://arxiv.org/pdf/1809.00916.pdf)
+##### 22.[SpineNet: Learning Scale-Permuted Backbone for Recognition and Localization](https://arxiv.org/pdf/1912.05027.pdf)
