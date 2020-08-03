@@ -31,6 +31,8 @@ Occlusion Estimation](http://openaccess.thecvf.com/content_ECCV_2018/papers/CHUN
 - 跟11比主要变化有两个，一个是把head给换了，原来是直接预测S*S个小方格上的mask,现在把这一步拆成了两步，先提取共同的feature map，再用S*S个小方格各自的卷积核去在feature map上做卷积，得到最终的mask。这两步，feature map，和S*S个卷积核，都是可训练的，卷积核也会随输入不同而变化，所以叫动态卷积。这里的动态是指卷积的参数不是训练好后固定下来，而是由训练好的参数结合输入生成出来。第二个变化就是所谓的matrix NMS，原理也简单，都是估算的，先在置信度比自己高的框里找IOU最大的那个框，算被这个框衰减的系数，重合越大衰减越多；然后算这个框它自己被别的比它置信度大的框衰减的系数，这个框自己衰减得越多，它对它去衰减的那个框的影响就越少。表现出来就是fa/fb,具体内容看公式。solo受限于划分S*S网格的方法，其对小物体的AP应该是比较低的，文章列举的数据也印证了这一点，不管是检测还是分割，它跟fasterRCNN和FCOS在小物体上的指标都是有差距的。
 ##### 13.[GCNet: Non-local Networks Meet Squeeze-Excitation Networks and Beyond](https://arxiv.org/pdf/1904.11492.pdf)
 - 感觉没有受到什么太有意义的启发？把nonlocal和senet结合了一下，然后反向寻找解释的即视感。即使这样也感觉到有点奇怪，为什么attention最后变成了通道上的，空间上的去哪儿了？为什么non-local的attention学到的跟空间位置无关，即使作者做了实验证实了这一点，我仍然感觉有点奇怪。是不是跟学习任务有关？
+##### 14.[Strip Pooling: Rethinking Spatial Pooling for Scene Parsing](https://openaccess.thecvf.com/content_CVPR_2020/papers/Hou_Strip_Pooling_Rethinking_Spatial_Pooling_for_Scene_Parsing_CVPR_2020_paper.pdf)
+- 通过水平和竖直方向一条线上的pooling，来对长范围内的物体建模，有启发价值。
 
 
 
